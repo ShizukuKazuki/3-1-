@@ -42,14 +42,13 @@ void Enemy::Updata()
 	(this->*pFunc[phase])();
 	
 	phase++;
-	if (phase >= 2)
+	if (phase >= 3)
 	{
 		phase = 0;
 	}
-
 }
 void Enemy::Draw()
 {
-	printf("(Enemy Draw)\n");
+	printf("(enemy draw)\n");
 }
 
